@@ -23,3 +23,22 @@ def setup():
         else: 
             velocity.append([0,0])
             lifespan.append(randint(0,40))
+def draw():
+    global color
+    global numberOfParticules    
+    global position
+    global velocity
+    global lifespan      
+    background(0)
+    for i in range(0, numberOfParticules):
+      color=i%5
+      if color==0:
+        stroke(255,255,255)    
+      elif color==1:
+        stroke(255,255,0)
+      elif color==2:
+        stroke(255,0,255)
+      elif color==3:
+        stroke(0,255,0)
+      elif color==4:
+        stroke(0,255,255)
