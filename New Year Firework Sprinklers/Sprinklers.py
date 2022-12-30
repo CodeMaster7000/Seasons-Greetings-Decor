@@ -52,5 +52,4 @@ def draw():
         velocity[i] = [randint(-2,2), randint(-10,-5)]
         position[i] = [0,0]
         lifespan[i] = randint(0,40)
-
 run()
