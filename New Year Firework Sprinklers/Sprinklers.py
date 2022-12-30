@@ -42,3 +42,15 @@ def draw():
         stroke(0,255,0)
       elif color==4:
         stroke(0,255,255)
+      point(position[i][0] + 150, position[i][1] + 300 )
+      position[i][0]+=velocity[i][0]
+      position[i][1]+=velocity[i][1]
+      velocity[i][1]+=0.2
+      point(position[i][0] + 150, position[i][1] + 300 )
+      lifespan[i]-=1
+      if (lifespan[i] < 0): 
+        velocity[i] = [randint(-2,2), randint(-10,-5)]
+        position[i] = [0,0]
+        lifespan[i] = randint(0,40)
+
+run()
