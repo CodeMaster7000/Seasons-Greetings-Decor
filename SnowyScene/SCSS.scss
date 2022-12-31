@@ -63,3 +63,15 @@ g.background__snowman {
   opacity: 0;
   animation: snowfall 2.8s ease-out .8s infinite;
 }
+@keyframes snowfall {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  70% { opacity: 0;  }
+  100% { transform: translate(-2em, 10em); }
+}
+@keyframes rock {
+  0% { transform: rotate(0); }
+  60% { transform: rotate(-2deg); }
+  80% { transform: rotate(1deg); }
+  100% { transform: rotate(0); }
+}
